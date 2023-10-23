@@ -1257,6 +1257,7 @@ HASHCODE_FIELDS_PER_SCANNER = {
     'Popeye Scan': ['title', 'description'],
     'Wazuh Scan': ['title'],
     'Nuclei Scan': ['title', 'cwe', 'severity'],
+    'KubeHunter Scan': ['title', 'description', 'steps_to_reproduce'],
 }
 
 # Override the hardcoded settings here via the env var
@@ -1450,6 +1451,7 @@ DEDUPLICATION_ALGORITHM_PER_PARSER = {
     'Wpscan': DEDUPE_ALGO_HASH_CODE,
     'Popeye Scan': DEDUPE_ALGO_HASH_CODE,
     'Nuclei Scan': DEDUPE_ALGO_HASH_CODE,
+    'KubeHunter Scan': DEDUPE_ALGO_HASH_CODE,
 }
 
 # Override the hardcoded settings here via the env var
