@@ -32,16 +32,10 @@ services:
   nginx:
     volumes:
       - './dojo/static/dojo:/usr/share/nginx/html/static/dojo'
-  mysql:
-    ports:
-      - target: ${DD_DATABASE_PORT}
-        published: ${DD_DATABASE_PORT}
-        protocol: tcp
-        mode: host
   postgres:
     ports:
-      - target: ${DD_DATABASE_PORT}
-        published: ${DD_DATABASE_PORT}
+      - target: 5432
+        published: 5432
         protocol: tcp
         mode: host
   mailhog:
